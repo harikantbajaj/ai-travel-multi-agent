@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block title %}AI Travel Agent - Plan Your Perfect Trip{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="display-4 fw-bold text-white mb-4">
+                    <i class="fas fa-globe-americas me-3"></i>
+                    AI Travel Agent
+                </h1>
+                <p class="lead text-white-50 mb-5">
+                    Experience the future of travel planning with our advanced AI-powered multi-agent system.
+                    Choose from three different planning experiences tailored to your needs.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h2 class="text-center mb-5 fw-bold">Choose Your Planning Experience</h2>
+
+            <div class="row g-4">
+                <!-- Single-Agent Planning -->
+                <div class="col-md-4">
+                    <div class="card planning-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="planning-icon mb-3">
+                                <i class="fas fa-user text-primary"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Single-Agent Planning</h5>
+                            <h6 class="text-muted mb-3">Classic Approach</h6>
+                            <p class="card-text text-muted small">
+                                Traditional single AI agent approach with proven reliability and efficiency.
+                            </p>
+                            <ul class="list-unstyled text-start small mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Direct planning methodology</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Fast and reliable</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Perfect for quick trips</li>
+                            </ul>
+                            <button class="btn btn-primary w-100 planning-btn" data-mode="single">
+                                <i class="fas fa-play me-2"></i>Start Planning
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legacy Multi-Agent Planning -->
+                <div class="col-md-4">
+                    <div class="card planning-card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="planning-icon mb-3">
+                                <i class="fas fa-users text-warning"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Legacy Multi-Agent</h5>
+                            <h6 class="text-muted mb-3">Enhanced Collaboration</h6>
+                            <p class="card-text text-muted small">
+                                6 specialized AI agents working together for enhanced recommendations.
+                            </p>
+                            <ul class="list-unstyled text-start small mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>6 specialized agents</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Collaborative planning</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Better recommendations</li>
+                            </ul>
+                            <button class="btn btn-warning w-100 planning-btn" data-mode="legacy_multi">
+                                <i class="fas fa-users me-2"></i>Start Planning
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LangGraph Multi-Agent Planning -->
+                <div class="col-md-4">
+                    <div class="card planning-card h-100 border-0 shadow-sm featured">
+                        <div class="card-body text-center p-4">
+                            <div class="featured-badge">
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-1">RECOMMENDED</span>
+                            </div>
+                            <div class="planning-icon mb-3">
+                                <i class="fas fa-brain text-danger"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">LangGraph Multi-Agent</h5>
+                            <h6 class="text-muted mb-3">Advanced AI System</h6>
+                            <p class="card-text text-muted small">
+                                Google Gemini Flash-2.0 powered agents with real-time search integration.
+                            </p>
+                            <ul class="list-unstyled text-start small mb-4">
+                                <li><i class="fas fa-check text-success me-2"></i>Google Gemini AI</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Real-time search</li>
+                                <li><i class="fas fa-check text-success me-2"></i>State-of-the-art planning</li>
+                            </ul>
+                            <button class="btn btn-danger w-100 planning-btn" data-mode="langgraph">
+                                <i class="fas fa-rocket me-2"></i>Start Planning
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h3 class="mb-4 fw-bold">Why Choose Our AI Travel Agent?</h3>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-search text-primary"></i>
+                        </div>
+                        <h6 class="fw-bold">Real-Time Search</h6>
+                        <p class="text-muted small">Live data from DuckDuckGo for current information</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-users-cog text-success"></i>
+                        </div>
+                        <h6 class="fw-bold">Multi-Agent System</h6>
+                        <p class="text-muted small">Specialized AI agents collaborate for optimal plans</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-brain text-warning"></i>
+                        </div>
+                        <h6 class="fw-bold">Advanced AI</h6>
+                        <p class="text-muted small">Powered by Google Gemini Flash-2.0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Trip Planning Form -->
+<div class="modal fade" id="planningModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Plan Your Trip</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="tripFormContainer">
+                    <!-- Trip form will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+{% endblock %}
